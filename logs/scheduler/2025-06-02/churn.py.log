@@ -1,0 +1,60 @@
+[2025-06-02T23:03:16.405+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:03:16.439+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:03:16.480+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:16.469+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:03:26.162+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:03:26.790+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.790+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-06-02T23:03:26.839+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.838+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-06-02T23:03:26.867+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.867+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-06-02T23:03:26.868+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.868+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:03:26.921+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.921+0000] {dag.py:2963} INFO - Creating ORM DAG for prepare_churn_dataset
+[2025-06-02T23:03:26.982+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:26.982+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:03:27.062+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 10.679 seconds
+[2025-06-02T23:03:56.082+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:03:56.095+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:03:56.106+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:56.106+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:03:56.730+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:03:56.954+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:56.953+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:03:56.981+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:03:56.980+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:03:57.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 0.968 seconds
+[2025-06-02T23:04:27.323+0000] {processor.py:157} INFO - Started process (PID=84) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:04:27.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:04:27.328+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:27.328+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:04:28.005+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:04:28.036+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:28.036+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:04:28.072+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:28.072+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:04:28.094+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 0.775 seconds
+[2025-06-02T23:04:58.134+0000] {processor.py:157} INFO - Started process (PID=143) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:04:58.135+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:04:58.138+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:58.137+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:04:58.576+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:04:58.593+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:58.593+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:04:58.613+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:04:58.612+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:04:58.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 0.498 seconds
+[2025-06-02T23:05:28.907+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:05:28.922+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:05:28.930+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:05:28.929+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:05:30.744+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:05:30.777+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:05:30.776+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:05:30.809+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:05:30.809+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:05:30.830+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 1.960 seconds
+[2025-06-02T23:06:01.841+0000] {processor.py:157} INFO - Started process (PID=256) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:06:01.844+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:06:01.853+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:01.849+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:06:04.000+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:06:04.062+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:04.061+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:06:04.173+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:04.172+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:06:04.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 2.419 seconds
+[2025-06-02T23:06:34.912+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:06:34.913+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:06:34.917+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:34.916+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:06:36.214+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:06:36.251+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:36.250+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:06:36.324+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:06:36.324+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:06:36.365+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 1.458 seconds
+[2025-06-02T23:07:06.542+0000] {processor.py:157} INFO - Started process (PID=376) to work on /opt/airflow/dags/churn.py
+[2025-06-02T23:07:06.549+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/churn.py for tasks to queue
+[2025-06-02T23:07:06.553+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:07:06.552+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/churn.py
+[2025-06-02T23:07:07.370+0000] {processor.py:839} INFO - DAG(s) dict_keys(['prepare_churn_dataset']) retrieved from /opt/airflow/dags/churn.py
+[2025-06-02T23:07:07.396+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:07:07.395+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-06-02T23:07:07.422+0000] {logging_mixin.py:154} INFO - [2025-06-02T23:07:07.422+0000] {dag.py:3722} INFO - Setting next_dagrun for prepare_churn_dataset to 2023-01-01T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2025-06-02T23:07:07.441+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/churn.py took 0.904 seconds
