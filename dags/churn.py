@@ -1,21 +1,63 @@
+# dags/churn.py
+
 import pendulum
 from airflow.decorators import dag, task
 
 @dag(
     schedule='@once',
-    start_date=pendulum.datetime(2023, 1, 1, tz="UTC"),
+    start_date=pendulum.datetime(2025, 6, 3, tz="UTC"),
+    catchup=False,
     tags=["ETL"]
 )
 def prepare_churn_dataset():
     import pandas as pd
     import numpy as np
+    import sqlalchemy
     from airflow.providers.postgres.hooks.postgres import PostgresHook
-   
+
+    #ваш код здесь #
+    @task()
+    def create_table():
+        from sqlalchemy import Table, MetaData, Column, Integer, Float, String, DateTime, UniqueConstraint, inspect
+        # ваш код здесь #
+        hook = PostgresHook('destination_db')
+        db_conn = hook.get_sqlalchemy_engine()
+        print('db_conn: ', db_conn)
+                
+        metadata = MetaData()
+        users_churn = Table(
+            'users_churn',
+            metadata,
+            Column('id', Integer, primary_key=True, autoincrement=True),
+            Column('customer_id', String),
+            Column('begin_date', DateTime),
+            Column('end_date', DateTime),
+            Column('type', String),
+            Column('paperless_billing', String),
+            Column('payment_method', String),
+            Column('monthly_charges', Float),
+            Column('total_charges', Float),
+            Column('internet_service', String),
+            Column('online_security', String),
+            Column('online_backup', String),
+            Column('device_protection', String),
+            Column('tech_support', String),
+            Column('streaming_tv', String),
+            Column('streaming_movies', String),
+            Column('gender', String),
+            Column('senior_citizen', Integer),
+            Column('partner', String),
+            Column('dependents', String),
+            Column('multiple_lines', String),
+            Column('target', Integer),
+            UniqueConstraint('customer_id', name='unique_employee_constraint')
+        ) 
+        
+        if not inspect(db_conn).has_table(users_churn.name): 
+            metadata.create_all(db_conn)
+
     @task()
     def extract(**kwargs):
-        """
-        #### Extract task
-        """
         hook = PostgresHook('source_db')
         conn = hook.get_conn()
         sql = f"""
@@ -35,18 +77,14 @@ def prepare_churn_dataset():
 
     @task()
     def transform(data: pd.DataFrame):
-        """
-        #### Transform task
-        """
+
         data['target'] = (data['end_date'] != 'No').astype(int)
         data['end_date'].replace({'No': None}, inplace=True)
         return data
 
     @task()
     def load(data: pd.DataFrame):
-        """
-        #### Load task
-        """
+
         hook = PostgresHook('destination_db')
         hook.insert_rows(
             table="users_churn",
@@ -56,8 +94,9 @@ def prepare_churn_dataset():
             rows=data.values.tolist()
     )
 
+    # ваш код здесь #
+    create_table()
     data = extract()
     transformed_data = transform(data)
     load(transformed_data)
-
-prepare_churn_dataset() 
+prepare_churn_dataset()
