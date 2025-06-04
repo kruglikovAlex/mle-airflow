@@ -1,13 +1,16 @@
 # dags/churn.py
 
 import pendulum
+from steps.message import send_telegram_success_message, send_telegram_failure_message
 from airflow.decorators import dag, task
 
 @dag(
     schedule='@once',
     start_date=pendulum.datetime(2025, 6, 3, tz="UTC"),
     catchup=False,
-    tags=["ETL"]
+    tags=["ETL"],
+    on_success_callback=send_telegram_success_message,
+    on_failure_callback=send_telegram_failure_message
 )
 def prepare_churn_dataset():
     import pandas as pd
